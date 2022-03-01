@@ -12,9 +12,9 @@
     </button>
     <div class="hidden w-full h-full md:block md:w-auto" id="mobile-menu">
       <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-        <x-navitem link="#" text="Home" />
-        <x-navitem link="/services" text="Services" />
-        <x-navitem link="/pricing" text="Pricing" />
+        <x-navitem link="#" text="Home" extra="" />
+        <x-navitem link="/services" text="Services" extra="" />
+        <x-navitem link="/pricing" text="Pricing" extra="" />
         <x-navitem link="/contact" text="Say Hello" extra="bg-theme-black h-full" />
       </ul>
     </div>
