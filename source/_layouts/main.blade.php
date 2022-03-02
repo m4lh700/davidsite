@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
-    <body class="text-gray-900 font-sans antialiased w-screen">
+    <body class="text-gray-900 font-sans antialiased">
         @include('header', ['maintitle' => $page->maintitle, 'subtitle' => $page->subtitle, 'intro' => $page->intro])
         @yield('body')
         @include('_layouts.footer')

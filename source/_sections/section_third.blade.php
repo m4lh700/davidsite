@@ -1,4 +1,4 @@
-<section class="bg-theme-black h-auto" id="resume">
+<section class="px-6 md:p-0 bg-theme-black h-auto overflow-hidden" id="resume">
   <div class="container mx-auto pt-14 mx8">
     <div class="block md:flex flex-row">
         <!-- Left side -->
@@ -19,6 +19,5 @@
             </ol>
         </div>
     </div>
-    <x-divider />
   </div>
 </section>

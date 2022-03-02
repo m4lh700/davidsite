@@ -1,3 +1,3 @@
 @props(['text'])
 
-<p class="text-white font-thin text-3xl">{{ $text }}</p>
+<p class="text-white font-thin text-xl md:text-3xl">{{ $text }}</p>

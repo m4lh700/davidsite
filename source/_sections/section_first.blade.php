@@ -1,4 +1,4 @@
-<section class="bg-theme-black h-auto" id="about">
+<section class="px-6 md:p-0 bg-theme-black h-auto overflow-hidden" id="about">
     <div class="container mx-auto pt-14 mx8">
     <div class="block md:flex flex-row">
         <!-- Left side -->
@@ -7,7 +7,7 @@
             <x-sectiontext text="{{ $page->abouttext }}" />
         </div>
         <!-- Right side -->
-        <div class="flex align-middle mx-auto my-auto" data-aos="fade-up">
+        <div class="block md:flex align-middle mx-auto my-auto" data-aos="fade-up">
             <!--<x-sectiontitle title="about" extra="mx-auto my-auto" />-->
             <div class="bg-cover bg-no-repeat bg-center rounded-full h-80 w-80" style="background-image: url('https://www.lnbo.nl/images/avatars/1835.jpg')"></div>
         </div>
