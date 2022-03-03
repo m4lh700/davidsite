@@ -2,7 +2,7 @@
     <div class="container mx-auto pt-14 mx8">
     <div class="block md:flex flex-row md:pb-14">
         <!-- Left side -->
-        <div class="flex justify-between flex-wrap flex-1 align-middle mx-auto" data-aos="fade-right">
+        <div class="flex justify-between flex-wrap flex-1 align-middle mx-auto" data-aos="fade-right" id="skillpills">
             <div class="flex-auto">
                 <div class="py-4">
                     <x-sectiontitle title="Back-end development" extra="mb-2" />

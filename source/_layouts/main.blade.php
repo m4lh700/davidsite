@@ -19,6 +19,12 @@
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
     <body class="text-gray-900 font-sans antialiased">
+        <div id="preloader" class="preloader w-screen h-screen bg-theme-black fixed z-50 p-12 pt-24 md:p-80 mx-auto my-auto animate__animated">
+          <div id="percCounter" class="text-xl md:text-5xl text-white font-bold text-center uppercase leading-relaxed m-4 animate__animated animate__fadeIn">0%</div>
+          <div id="preprogressbar" class="w-full bg-gray-200 rounded-full dark:bg-gray-700 animate__animated animate__fadeIn">
+            <div id="bar" class="bg-red-500 text-xs font-medium text-white text-center p-2 leading-none rounded-full" style="width: 0%"> 0%</div>
+          </div>
+        </div>
         @include('header', ['maintitle' => $page->maintitle, 'subtitle' => $page->subtitle, 'intro' => $page->intro])
         @yield('body')
         @include('_layouts.footer')

@@ -1,4 +1,4 @@
-<div class="bg-red-500 navbar z-50 p-6 md:p-0" id="sticky">
+<div class="bg-red-500 navbar z-40 p-6 md:p-0" id="sticky">
   <div class="container mx-auto">
   <nav class="bg-red-500 dark:bg-gray-800">
   <div class="container flex flex-wrap justify-between items-center mx-auto">

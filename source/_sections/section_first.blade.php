@@ -7,7 +7,7 @@
             <x-sectiontext text="{{ $page->abouttext }}" />
         </div>
         <!-- Right side -->
-        <div class="block md:flex align-middle mx-auto my-auto" data-aos="fade-up">
+        <div class="hidden md:flex align-middle mx-auto my-auto" data-aos="fade-up">
             <!--<x-sectiontitle title="about" extra="mx-auto my-auto" />-->
             <div class="bg-cover bg-no-repeat bg-center rounded-full h-80 w-80" style="background-image: url('https://www.lnbo.nl/images/avatars/1835.jpg')"></div>
         </div>

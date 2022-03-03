@@ -27,17 +27,57 @@ __webpack_require__.r(__webpack_exports__);
 aos__WEBPACK_IMPORTED_MODULE_0___default().init();
 
 window.onscroll = function () {
-  myFunction();
+  stickyHeader();
 };
 
-var header = document.getElementById("sticky");
-var sticky = header.offsetTop;
+window.onload = function (event) {
+  preProgressbar();
+};
 
-function myFunction() {
+var header = document.getElementById('sticky'); //let skillpills = document.getElementById('skillpills');
+
+var preloader = document.getElementById('preloader');
+var sticky = header.offsetTop;
+var headerheight = document.getElementById('sticky').clientHeight;
+setTimeout(function () {
+  preloader.classList.add('animate__slideOutUp');
+}, 2000);
+
+function stickyHeader() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
+    document.getElementById('about').style.padding = headerheight + 'px 0px 0px 0px';
   } else {
     header.classList.remove("sticky");
+    document.getElementById('about').style.padding = '0px 0px 0px 0px';
+  }
+}
+
+function preProgressbar() {
+  var i = 0;
+
+  if (i == 0) {
+    var frame = function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width + "%";
+        counter.innerHTML = "Loading... " + width + "%";
+
+        if (width == 100) {
+          counter.innerHTML = "Done!";
+        }
+      }
+    };
+
+    i = 1;
+    var elem = document.getElementById("bar");
+    var counter = document.getElementById('percCounter');
+    var width = 10;
+    var id = setInterval(frame, 10);
   }
 }
 
