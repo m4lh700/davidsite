@@ -1,5 +1,5 @@
 @props(['date', 'title', 'text'])
-
+<!-- Resume Timeline item -->
 <li data-aos="fade-left" class="mb-10 ml-6">
     <span class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white">
         <svg class="w-4 h-4 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -10,7 +10,7 @@
     <div class="block mb-2 text-sm font-normal leading-none text-gray-400 ">{{ $date }}</div>
     <p class="mb-4 text-base font-normal text-gray-500">{{ $text }}</p>
 </li>
-
+<!-- End Resume Timeline item -->
 
 
 

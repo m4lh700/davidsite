@@ -5,6 +5,8 @@ return [
     'baseUrl' => 'https://davidholleman.dev',
     'title' => 'David Holleman - Full stack developer',
     'description' => 'David personal website',
+    'name' => 'David',
+    'avatar' => 'https://david-homepage.vercel.app/_next/image?url=%2Fassets%2Fsvg%2Fdavid.svg&w=128&q=75',
     'collections' => [],
     'maintitle' => 'A <span class="text-black" style="color:#161616;">Full Stack Developer</span> based in the Netherlands and I like to KISS and keep it DRY <span class="text-black" style="color:#161616;">;)</span>',
     'intro' => 'Hello there, i\'m David<span class="text-black" style="color:#161616;">!</span>',

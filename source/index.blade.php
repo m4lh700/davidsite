@@ -2,9 +2,9 @@
 
 @section('body')
 
-    @include('_sections.section_first')
-    @include('_sections.section_second')
-    @include('_sections.section_third')
-    @include('_sections.section_fourth')
+    @include('_sections.section_about')
+    @include('_sections.section_skills')
+    @include('_sections.section_resume')
+    @include('_sections.section_contact')
 
 @endsection

@@ -30,12 +30,11 @@ window.onscroll = function () {
   stickyHeader();
 };
 
-window.onload = function (event) {
+window.onload = function () {
   preProgressbar();
 };
 
-var header = document.getElementById('sticky'); //let skillpills = document.getElementById('skillpills');
-
+var header = document.getElementById('sticky');
 var preloader = document.getElementById('preloader');
 var sticky = header.offsetTop;
 var headerheight = document.getElementById('sticky').clientHeight;
@@ -75,7 +74,7 @@ function preProgressbar() {
 
     i = 1;
     var elem = document.getElementById("bar");
-    var counter = document.getElementById('percCounter');
+    var counter = document.getElementById("percCounter");
     var width = 10;
     var id = setInterval(frame, 10);
   }
