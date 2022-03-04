@@ -2,7 +2,7 @@
     <div class="container mx-auto pt-14 mx8">
     <div class="block md:flex flex-row">
         <!-- Left side -->
-        <div class="container mx-auto px4 pt-12 mx8 mb-4 md:flex justify-between flex-wrap flex-1 block" data-aos="fade-up">
+        <div class="container mx-auto my-auto md:px4 md:pt-12 mx8 md:flex flex-wrap flex-1 block" data-aos="fade-up">
             <x-sectiontitle title="about" extra="" />
             <x-sectiontext text="{{ $page->abouttext }}" />
         </div>

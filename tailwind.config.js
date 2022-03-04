@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         'theme-black': '#161616',
       },
+      fontFamily: {
+        'poppins' : ['"Poppins"', 'sans-serif']
+      },
     },
   },
   variants: {

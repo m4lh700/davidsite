@@ -2,7 +2,7 @@
   <div class="container mx-auto">
   <nav class="bg-red-500 dark:bg-gray-800">
   <div class="container flex flex-wrap justify-between items-center mx-auto">
-    <a href="/" class="flex items-center">
+    <a href="#" class="flex items-center">
         <span class="text-white uppercase font-bold self-center text-xl font-semibold whitespace-nowrap"><code>&lt; David /></code></span>
     </a>
     <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg md:hidden hover:bg-theme-black">

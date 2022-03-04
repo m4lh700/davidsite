@@ -5,25 +5,29 @@
         <div class="flex justify-between flex-wrap flex-1 align-middle mx-auto" data-aos="fade-right" id="skillpills">
             <div class="flex-auto">
                 <div class="py-4">
-                    <x-sectiontitle title="Back-end development" extra="mb-2" />
+                    <x-sectiontitle title="Back-end development" extra="" />
+                    <p class="font-thin text-white mb-2">Skills related to back-end development; Building the applications functionality, structure and backbone including databases.</p>
                     @foreach($page->backenddata as $backend)
                         <x-skillpill text="#{{ $backend }}" />
                     @endforeach
                 </div>
                 <div class="py-4">
-                    <x-sectiontitle title="Front-end development" extra="mb-2" />
+                    <x-sectiontitle title="Front-end development" extra="" />
+                    <p class="font-thin text-white mb-2">Skills related to back-end development. Back-end means programming the infrastructure and handling data.</p>
                     @foreach($page->frontenddata as $frontend)
                         <x-skillpill text="#{{ $frontend }}" />
                     @endforeach
                 </div>
                 <div class="py-4">
-                    <x-sectiontitle title="Server sided" extra="mb-2" />
+                    <x-sectiontitle title="Server sided" extra="" />
+                    <p class="font-thin text-white mb-2">Skills related to back-end development. Back-end means programming the infrastructure and handling data.</p>
                     @foreach($page->serverdata as $server)
                         <x-skillpill text="#{{ $server }}" />
                     @endforeach
                 </div>
                 <div class="py-4">
-                    <x-sectiontitle title="Search Engine Optimisations (SEO)" extra="mb-2" />
+                    <x-sectiontitle title="Search Engine Optimisations (SEO)" extra="" />
+                    <p class="font-thin text-white mb-2">Skills related to back-end development. Back-end means programming the infrastructure and handling data.</p>
                     @foreach($page->seodata as $seo)
                         <x-skillpill text="#{{ $seo }}" />
                     @endforeach
