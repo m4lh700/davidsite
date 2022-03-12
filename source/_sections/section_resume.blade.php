@@ -2,7 +2,7 @@
   <div class="container mx-auto pt-14 mx8">
     <div class="block md:flex flex-row">
         <!-- Left side -->
-        <div class="container mx-auto my-auto px4 pt-12 mx8 pb-6 md:pb-0 md:pr-5 md:flex flex-wrap flex-1 block" data-aos="fade-right">
+        <div class="container my-auto pr-0 md:pr-10 pb-6 md:pb-0 md:pr-5 md:flex flex-wrap flex-1 block" data-aos="fade-right">
             <x-sectiontitle title="Resume" extra="" />
             <x-sectiontext text="{{ $page->abouttext }}" />
         </div>

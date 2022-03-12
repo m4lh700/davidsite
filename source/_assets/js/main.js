@@ -1,9 +1,10 @@
 import AOS from 'aos';
 import 'animate.css';
+import { skew } from './skew.js';
 AOS.init();
 
 window.onscroll = function() {stickyHeader()};
-window.onload = function () {preProgressbar()};
+window.onload = function () {preProgressbar(); consoleMsg();};
 
 let header = document.getElementById('sticky');
 let preloader = document.getElementById('preloader');
@@ -47,4 +48,15 @@ function preProgressbar() {
   }
 }
 
+function consoleMsg(){
+  if (!(window.console && window.console.log && window.console.group)) {
+    window.console = {
+        group: function () {},
+        log: function () {}
+    };
+  }
+
+  window.console.group('-----> ALERT! ALERT! ALERT! <-----');
+  window.console.log('\n How sneaky of you to check out the console and developer tools! :) \n\n');
+}
 

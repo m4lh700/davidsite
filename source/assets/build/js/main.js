@@ -22,6 +22,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! animate.css */ "./node_modules/animate.css/animate.css");
+/* harmony import */ var _skew_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./skew.js */ "./source/_assets/js/skew.js");
+/* harmony import */ var _skew_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_skew_js__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 aos__WEBPACK_IMPORTED_MODULE_0___default().init();
@@ -32,6 +35,7 @@ window.onscroll = function () {
 
 window.onload = function () {
   preProgressbar();
+  consoleMsg();
 };
 
 var header = document.getElementById('sticky');
@@ -79,6 +83,51 @@ function preProgressbar() {
     var id = setInterval(frame, 10);
   }
 }
+
+function consoleMsg() {
+  if (!(window.console && window.console.log && window.console.group)) {
+    window.console = {
+      group: function group() {},
+      log: function log() {}
+    };
+  }
+
+  window.console.group('-----> ALERT! ALERT! ALERT! <-----');
+  window.console.log('\n How sneaky of you to check out the console and developer tools! :) \n\n');
+}
+
+/***/ }),
+
+/***/ "./source/_assets/js/skew.js":
+/*!***********************************!*\
+  !*** ./source/_assets/js/skew.js ***!
+  \***********************************/
+/***/ (() => {
+
+var constrain = 20;
+var mouseOverContainer = document.getElementById("ex1");
+var ex1Layer = document.getElementById("ex1-layer");
+
+function transforms(x, y, el) {
+  var box = el.getBoundingClientRect();
+  var calcX = -(y - box.y - box.height / 2) / constrain;
+  var calcY = (x - box.x - box.width / 2) / constrain;
+  return "perspective(500px) " + "   rotateX(" + calcX + "deg) " + "   rotateY(" + calcY + "deg) ";
+}
+
+;
+
+function transformElement(el, xyEl) {
+  el.style.transform = transforms.apply(null, xyEl);
+}
+
+mouseOverContainer.onmousemove = function (e) {
+  var xy = [e.clientX, e.clientY];
+  var position = xy.concat([ex1Layer]);
+  window.requestAnimationFrame(function () {
+    transformElement(ex1Layer, position);
+  });
+};
 
 /***/ }),
 
