@@ -7,8 +7,8 @@
         </svg>
     </span>
     <h3 class="flex items-center mb-1 text-lg font-semibold text-white">{{ $title }}</h3>
-    <div class="block mb-2 text-sm font-normal leading-none text-gray-400 ">{{ $date }}</div>
-    <p class="mb-4 text-base font-normal text-gray-500">{{ $text }}</p>
+    <div class="block mb-2 text-sm font-normal leading-none text-gray-300 ">{{ $date }}</div>
+    <p class="mb-4 text-base font-normal text-gray-400">{!! $text !!}</p>
 </li>
 <!-- End Resume Timeline item -->
 

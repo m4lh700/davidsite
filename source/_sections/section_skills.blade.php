@@ -38,6 +38,15 @@
         <div class="container my-auto pl-0 md:pl-10 md:flex flex-wrap flex-1 block" data-aos="fade-left">
             <x-sectiontitle title="skills & Knowledge" extra="" />
             <x-sectiontext text="{{ $page->skillstext }}" />
+            <p class="font-bold text-white mt-6">For every project I keep these principles in mind.</p>
+            <ul class="text-white font-thin text-xl md:text-3xl list-disc list-inside" data-aos="fade-up">
+                <li>Dont Repeat yourself (I just did here).</li>
+                <li>Keep It Simple, Stupid</li>
+                <li>Test driven development</li>
+                <li>Component driven development</li>
+                <li>Security driven development</li>
+                <li>Performance driven development</li>
+            </ul>
         </div>
     </div>
     <x-divider />

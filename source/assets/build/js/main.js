@@ -93,8 +93,16 @@ function consoleMsg() {
   }
 
   window.console.group('-----> ALERT! ALERT! ALERT! <-----');
-  window.console.log('\n How sneaky of you to check out the console and developer tools! :) \n\n');
-}
+  window.console.log('\n How sneaky of you to check out the console! :) \n\n');
+} // Grab HTML Elements
+
+
+var btn = document.getElementById("menu-btn");
+var menu = document.getElementById("mobile-menu"); // Add Event Listeners
+
+btn.addEventListener("click", function () {
+  menu.classList.toggle("hidden");
+});
 
 /***/ }),
 

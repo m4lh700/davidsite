@@ -57,6 +57,16 @@ function consoleMsg(){
   }
 
   window.console.group('-----> ALERT! ALERT! ALERT! <-----');
-  window.console.log('\n How sneaky of you to check out the console and developer tools! :) \n\n');
+  window.console.log('\n How sneaky of you to check out the console! :) \n\n');
 }
+
+
+// Grab HTML Elements
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("mobile-menu");
+
+  // Add Event Listeners
+  btn.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
+  });
 
